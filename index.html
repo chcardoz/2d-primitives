@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSCI 437 Assignment 2</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+    <script src="sketch.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div id="title"><h1>2D primitives using P5.js</h1></div>
+    <div id="mainCanvas">
+      <div id="form">
+        <form>
+          <p><b>Select which primitive you want to draw</b></p>
+          <label for="square">Square</label>
+          <input
+            id="square"
+            name="primitive"
+            type="radio"
+            value="square"
+            checked
+          />
+          <label for="circle">Circle</label>
+          <input id="circle" name="primitive" type="radio" value="circle" />
+          <label for="freehand">Freehand</label>
+          <input id="freehand" name="primitive" type="radio" value="freehand" />
+          <br />
+          <label for="andy">Andy</label>
+          <input id="andy" name="primitive" type="radio" value="andy" />
+          <label for="text">Text</label>
+          <input id="text" name="primitive" type="radio" value="text" />
+          <hr />
+          <p><b>Select the stroke width</b></p>
+          <input
+            type="range"
+            min="1"
+            max="50"
+            value="25"
+            id="strokeWidth"
+            oninput="onSliderChange()"
+          />
+          <hr />
+          <button type="button" onclick="onReset()">Reset Canvas</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+body {
+  background-color: azure;
+}
+.p5Canvas {
+  border: solid;
+  border-radius: 1.5em;
+  background-color: white;
+}
+#mainCanvas {
+  display: flex;
+  justify-content: center;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+}
+
+#title > h1 {
+  font-family: monospace;
+}
+
+#form {
+  border: solid 0.2em;
+  border-radius: 1.5em;
+  padding: 2em;
+  background-color: white;
+  font-family: sans-serif;
+  margin-right: 1em;
+}
