@@ -33,6 +33,17 @@
           <label for="text">Text</label>
           <input id="text" name="primitive" type="radio" value="text" />
           <hr />
+          <p><b>Type the text to display</b></p>
+          <input
+            type="text"
+            id="displayText"
+            placeholder="hello"
+            onchange="onTextChange()"
+          />
+          <hr />
+          <p><b>Select color</b></p>
+          <input type="color" id="color" onchange="onColorChange()" />
+          <hr />
           <p><b>Select the stroke width</b></p>
           <input
             type="range"
