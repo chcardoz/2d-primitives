@@ -35,9 +35,7 @@ let img;
  * P5 Function to preload assets
  */
 function preload() {
-  img = loadImage(
-    "http://www.aharrisbooks.net/h5qr/part9/andyGoofy.gif/andyGoofy.gif"
-  );
+  img = loadImage("andyGoofy.gif");
 }
 
 /**
